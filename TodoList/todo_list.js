@@ -40,3 +40,11 @@ addTaskBtn.addEventListener("click", addTask);
 clearCompletedBtn.addEventListener("click", clearCompletedTasks);
 
 displayTasks();
+
+
+function clearAll() {
+    taskList.innerHTML = "";
+    while(tasks.length) {
+        tasks.pop();
+    }
+}
